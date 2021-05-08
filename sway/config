@@ -235,18 +235,7 @@ input * {
     xkb_options "grp:win_space_toggle"
 }
 
-#
-# touchpad
-#
-input "1739:0:Synaptics_TM3072-003" {
-    tap enabled
-    natural_scroll enabled
-    pointer_accel 0.2
-}
-
-input "1:1:AT_Translated_Set_2_keyboard" xkb_model "pc101"
-
 exec nm-applet --sm-disable --indicator
-exec blueman-applet
 
 include /etc/sway/config.d/*
+include config.d/*
